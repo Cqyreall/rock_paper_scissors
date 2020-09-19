@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Result of the Game!</h1>
+    {% if winner == "tie" %}
+
+        <h1>There Was a tie</h1>
+    {% elif winner== "Titanius" %}
+        <h1> <marquee behavior="alternate">{{ winner.capitalize() }} WINS<span>&#129302;</span></marquee> </h1>
+        <h1>You were Warned <span>&#9760;</span></h1>
+    
+    {% else %}
+    <h1> <marquee behavior="alternate">{{ winner.capitalize() }} WINS<span>&#127881;</span></marquee> </h1>
+    <h1>Arise Humanoid for you are Triumphant<span>	&#128081;</span></h1>
+    {% endif %}
+
+{% endblock %}

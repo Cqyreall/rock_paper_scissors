@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Battle Against Your Fellow Humanoid <span>&#129338;</span></h1>
+    <form action="/choice" method="post" class="multi-player">
+        <section>
+            <label for="player_1">Player 1</label>
+            <input type="text" name="player_1" id="player_1">
+            <label for="player_1">Choose your weapon</label>
+            <input type="submit" value="rock" name="player_1_choice" class="weapons">
+            <input type="submit" value="paper" name="player_1_choice" class="weapons">
+            <input type="submit" value="scissors" name="player_1_choice" class="weapons">
+        </section>
+    </form>
+
+{% endblock %}

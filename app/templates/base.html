@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ title }} - Rock Paper Scissors</title>
+</head>
+<body>
+    <section class="top-file">
+        <img src="https://www.esquireme.com/public/images/2017/05/29/rock_paper_scissors__2x.png" width="250" height="120" alt="blank">
+        <h1>The Rock Paper Scissors Game! <span>&#9994;</span><span>&#9995;</span><span>&#9996;</span></h1>
+        <ul class="top-list">
+            <li><a href="/"><button>Home Page</button></a></li>
+            <li><a href="/play"><button>2 Players</button></a></li>
+            <li><a href="/AI"><button>Single player</button></a></li>
+        </ul>
+    </section>
+
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <p><span>&#169;</span> CodeClan </p>
+    </footer>
+</body>
+</html>

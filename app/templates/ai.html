@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>So You have chosen to go against Titanius <span>&#129302;</span></h1>
+    <form action='/ai' method="post">
+        <section class="titanius">
+            <label for="player">Name</label>
+            <input type="text" name="player" id="player">
+            <label for="player">Choose your weapon</label>
+            <input type="submit" value="rock" name="player_choice" class="weapons">
+            <input type="submit" value="paper" name="player_choice" class="weapons">
+            <input type="submit" value="scissors" name="player_choice" class="weapons">
+        </section>
+    </form>
+    
+
+{% endblock %}

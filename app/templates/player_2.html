@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Battle Against Your Fellow Humanoid <span>&#129338;</span></h1>
+    <form action="/choice2" method="post" class="multi-player">
+        <section class="player-2">
+            <label for="player_2">Player 2</label>
+            <input type="text" name="player_2" id="player_2">
+            <label for="player_2">Choose your weapon</label>
+            <input type="submit" value="rock" name="player_2_choice" class="weapons">
+            <input type="submit" value="paper" name="player_2_choice" class="weapons">
+            <input type="submit" value="scissors" name="player_2_choice" class="weapons">
+        </section>
+    </form>
+    {% for player in players %}
+    <p>
+        Name: {{ player.name }}, choice: {{ player.choice }}
+    </p>
+    {% endfor %}
+
+{% endblock %}
